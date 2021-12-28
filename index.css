@@ -15,20 +15,20 @@ body, html {
   margin: 0;
 }
 
-#about {
-  background-color: #8d8e94;
-}
-
 #home {
   background-color: #BAD894;
+}
+
+#about {
+  background-color: #f0cdf7;
 }
 
 #footer {
   background-color: #9be2d0;
 }
 
-#contact {
-  background-color: #e7cfec;
+#services {
+  background-color: #8d8e94;
 }
 
 section {
@@ -122,6 +122,49 @@ section {
           flex: 1;
 }
 
+.services-section {
+  padding: 1em 0px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.services-section .services-container > div {
+  border: 1px solid hotpink;
+  width: 25%;
+  height: 100px;
+}
+
+.services-section .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5em;
+  padding: 1em 0;
+}
+
+.services-section .services-header {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 nav {
   z-index: 99;
   position: sticky !important;
@@ -193,7 +236,7 @@ nav .container ul li.active-home a {
 }
 
 nav .container ul li.active-about {
-  background-color: #8d8e94;
+  background-color: #F0CDF7;
   -webkit-transition: 0.3s ease background-color;
   transition: 0.3s ease background-color;
 }
@@ -202,13 +245,13 @@ nav .container ul li.active-about a {
   color: white;
 }
 
-nav .container ul li.active-contact {
-  background-color: #E7CFEC;
+nav .container ul li.active-services {
+  background-color: #8d8e94;
   -webkit-transition: 0.3s ease background-color;
   transition: 0.3s ease background-color;
 }
 
-nav .container ul li.active-contact a {
+nav .container ul li.active-services a {
   color: white;
 }
 
@@ -227,6 +270,29 @@ nav .container a {
 }
 
 @media only screen and (max-width: 600px) {
+  .services-section .services-container > div {
+    width: 90%;
+  }
+  .services-section .services-container {
+    overflow: scroll;
+  }
+  .services-section .services-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .services-section .services-section .services-header {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
   nav {
     position: -webkit-sticky !important;
     position: sticky !important;
@@ -289,6 +355,7 @@ nav .container a {
   }
   .hero-section .hero-container {
     width: 90%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,8 +382,9 @@ nav .container a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .hero-section .hero-container .hero-text h1 {
@@ -324,6 +392,19 @@ nav .container a {
   }
   .hero-section .hero-container .hero-details {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,14 +10,14 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+    if (pageYOffset >= sectionTop - sectionHeight / 5) {
       current = section.getAttribute("id");
     }
   });
 
   navLi.forEach((li) => {
     li.classList.remove("active-home");
-    li.classList.remove("active-contact");
+    li.classList.remove("active-services");
     li.classList.remove("active-about");
     li.classList.remove("active-footer");
     li.classList.remove("active")
