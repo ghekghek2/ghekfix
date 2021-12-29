@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 5) {
+    if (pageYOffset >= sectionTop - sectionHeight / 4) {
       current = section.getAttribute("id");
     }
   });
@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
     li.classList.remove("active-home");
     li.classList.remove("active-services");
     li.classList.remove("active-about");
-    li.classList.remove("active-footer");
+    li.classList.remove("active-contact");
     li.classList.remove("active")
    
     if (li.classList.contains(current)) {
@@ -54,3 +54,4 @@ function myFunction(press){
   
   }
   
+

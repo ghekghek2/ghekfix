@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
 * {
 
   padding: 0;
@@ -25,15 +24,24 @@ margin: 0;
   background-color: #f0cdf7;
 }
 
-#footer {
-  background-color: rgb(155, 226, 208);
+#contact {
+  background-color: rgb(214, 212, 212);
 }
 #services {
   background-color: #8d8e94;
 }
 
 
+.title{
+ 
 
+position: absolute;
+left: 1rem;
+
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+}   
 
 
 
@@ -47,7 +55,7 @@ section{
   align-items: center;
   justify-content: center;
   margin: 0% auto;
-
+position: relative;
 
 }
 
@@ -149,12 +157,11 @@ padding: 1em ;
 
   .services-section{
     padding: 1em 0px;
-  
- 
-   height: 100%;
+    position: relative;
+
 display: flex;
 justify-content: center;
-overflow: hidden;
+
 
 
     .services-container > div{
@@ -166,29 +173,21 @@ overflow: hidden;
     }
 
     .services-container{
-
+      width: 90%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       justify-content: center;
     flex-wrap: wrap;
     gap: .5em;
     padding: 1em 0;
-    
+   
     
     
      }
 
    
 
-    .services-header{
- 
-
-
-
-      writing-mode: vertical-rl;
-      text-orientation: sideways;
-      transform: rotate(180deg);
-}     
+  
       
       
       }
@@ -223,15 +222,16 @@ width: 100%;
 
 .container-logo{
   display: flex;
-  align-items: flex-end;
+ align-items: center;
+ justify-content: center;
 
 
             .logo{
               background-image: url(image/hero-img/logo.png);
               background-repeat: no-repeat;
               background-size: contain;
-      height: 50px;
-      width: 50px;
+              width: 150px;
+              height: 50px;
              
                 }
 
@@ -311,7 +311,7 @@ width: 100%;
 
               }
 
-              li.active-footer {
+              li.active-contact {
                 background-color:#9BE2D0;
                 transition: 0.3s ease background-color;
               
@@ -349,11 +349,269 @@ width: 100%;
 
 
 
+.about-section{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .about-logo{
+display: flex;
+margin-right: auto;
+width: 20%;
+
+position: absolute;
+top: 20px;
+img{
+  width: 100%;
+}
+  
+  }
+  .about-container{
+    display: flex;
+    width: 90%;
+      justify-content: space-around;
+      gap: 3em;
+  
+ 
+    .lorem{
+      
+      text-align: justify;
+      width: 500px;
+    }
+
+
+    .about-details{
+      width: 500px;
+text-align: justify;
+    }
+  }
+}
+
+
+.contact-section{
+  display: flex;
+  position: relative;
+
+.contact-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+width: 90%;
+height: 100%;
+
+.contact-pic{
+
+background:url(contact-picture.png);
+
+background-repeat: no-repeat;
+background-size: cover;
+width: 30%;
+height: 100%;
+}
+.contact-form{
+  width: 30%;
+ text-align: justify;
+
+ 
+}
+
+
+
+}
+
+}
+
+
+.site-footer
+{
+ 
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+
+  hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+
+hr.small
+{
+  margin:20px 0
+}
+
+
+h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+a
+{
+  color:#737373;
+}
+a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+      .footer-links
+      {
+        padding-left:0;
+        list-style:none;
+        li
+      {
+        display:block
+      }
+
+      a
+      {
+        color:#737373
+      }
+      a:active , a:focus ,a:hover{
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .inline li{
+        display:inline-block
+      }
+      }
+      
+      
+.social-icons
+{
+  text-align:right
+  a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+  }
+}
+.copyright-text
+{
+  margin:0
+}
+}
+
+
+
+
+
+
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width : 600px) {
 
 .services-section{
+  overflow: scroll;
+height: auto;
 .services-container > div{
 width: 90%;
 }
@@ -366,18 +624,6 @@ width: 90%;
   flex-direction: column;
  flex: 1;
   width: 100%;
-.services-header{
-
-
-   
-
-
-  writing-mode: horizontal-tb;
-  transform: rotate(360deg);
-
-}
-
-  
 }
 
 }
@@ -468,14 +714,14 @@ right: 15px;
 
 
   .hero-section{
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    
+  justify-content: center;
+  align-items: center;
     position: relative;
     z-index: 88;
-    position: relative;
-    display: flex;
+
+ 
 .hero-container{
 
 
@@ -484,7 +730,7 @@ right: 15px;
   display: flex;
   justify-content: center;
 justify-content: space-around;
-position: relative;
+
 
 flex-direction: column;
 gap: 1em;
