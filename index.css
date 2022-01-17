@@ -85,8 +85,9 @@ height: 20vh;
 
 
 .label{
-  position: absolute;
-  margin-top: 8em;
+position: absolute;
+margin-top: 8em;
+ 
 
 }
 .label ul{
@@ -128,11 +129,14 @@ font-weight: 1000;
   position: relative;
 
 }
+
 .hero-container .unit{
-  flex: 100%;
-display: flex;
-justify-content: center;
-}
+
+  display: flex;
+  justify-content: center;
+ position: sticky;
+  }
+  
 
 
 .hero-container .unit .unit-container{
@@ -141,6 +145,8 @@ display: flex;
 justify-content: center;
 align-items: baseline;
 justify-content: space-between;
+
+
 
 }
 
@@ -151,6 +157,7 @@ justify-content: center;
 }
 .hero-container .unit .unit-container .tab{
  margin-right: 1rem;
+
   
   }
 
@@ -158,7 +165,8 @@ justify-content: center;
 
 
   width: 90%;
-  height: auto;
+ 
+
 
 }
 
@@ -386,6 +394,7 @@ align-items: center;
 justify-content: center;
   width: 90%;
   font-size: var(--step--1);
+
 }
 .about-logo{
   flex: 1;
@@ -1043,3 +1052,160 @@ width: 90%;
 
 
 }
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 500px) {
+
+
+
+  .hero-container{
+   
+    flex-direction: column;
+   
+
+  }
+
+
+
+.hero-container .hero-text h1{
+  width: 100%;
+  text-align: left;
+}
+ .hero-text h1 ,a{
+display: block;
+
+ }
+
+
+.hero-container .hero-details{
+ position: static;
+}
+.hero-container .hero-details p{
+  position: static;
+ }
+
+
+
+ .hero-container .unit{
+ 
+  display: flex;
+  justify-content: center;
+  }
+  
+
+.services-container{
+   display: flex;
+   flex-direction:column ;
+   width: 100%;
+}
+
+.services-container .service-tag .pricing p{
+  font-size: var(--step-0);
+}
+
+.services-container .service-tag ul li p{
+font-size: var(--step-0);
+}
+
+
+.about-container{
+  
+flex-direction: column;
+justify-content: center;
+justify-content: center;
+  
+  }
+
+ .about-container .about-logo{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    
+
+ }
+ .about-container .about-logo img{
+margin: 0 auto;
+  margin-bottom: 1em;
+
+}
+
+.mapouter{
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 110%;
+}
+.contact-container{
+ 
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+ 
+}
+
+
+.me{
+ flex: 1;
+  margin-bottom: 2em;
+ gap: 1em;
+}
+.social i {
+  display: flex;
+  align-items: center;
+padding-bottom: 1em;
+
+}
+.social h2 {
+  font-size: var(--step-4);
+}
+.app-title{
+  font-size: var(--step-2);
+}
+.me .social i {
+  font-size: var(--step-4);
+}
+
+.me .social i  a{
+  font-size: var(--step-0);
+}
+
+.background{
+  width: 100%;
+  height: 80%;
+}
+.contact-box{
+  width: 100%;
+}
+.screen{
+  width: 100%;
+}
+
+
+contact-container .me .social{
+  height:auto;
+}
+.sec{
+  padding: 2em 0;
+}
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 
+
+
+
+ .sec{
+height: 100%;
+
+}
+
+ 
